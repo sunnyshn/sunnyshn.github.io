@@ -27,16 +27,16 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="Sunny Ng" /></a>
+                <a class="navbar-brand fw-bold text-uppercase" href="#page-top">Sunny Ng</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publications">Highlights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#journey">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Connect</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -48,50 +48,65 @@
             <div class="container">
                 <div class="masthead-subheading">Astrophysics · Data science · Machine learning</div>
                 <div class="masthead-heading text-uppercase">Sunny Ng</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">View projects</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#publications">Publications &amp; Highlights</a>
             </div>
         </header>
-        <!-- Skills-->
-        <section class="page-section" id="services">
+        <!-- Intro / profile-->
+        <section class="page-section bg-light" id="intro">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                        <img class="img-fluid rounded-circle mx-auto d-block" style="max-width: 280px" src="assets/img/team/profile.png" alt="Sunny Ng" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="section-heading mb-3">Hello — I’m Sunny</h2>
+                        <p class="lead text-muted">Astrophysicist turned data scientist. I’ve worked on gravitational-wave discovery and inference, dense-matter astrophysics, and statistical analysis of large observational campaigns—now bringing that same rigor to ML systems, evaluation, and responsible modeling.</p>
+                        <p class="text-muted mb-0">Edit this paragraph anytime to match your current focus, location, and what roles you’re targeting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Research-->
+        <section class="page-section" id="research">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Skills &amp; focus</h2>
-                    <h3 class="section-subheading text-muted">From physics-heavy inference to production-minded data science.</h3>
+                    <h2 class="section-heading text-uppercase">Research</h2>
+                    <h3 class="section-subheading text-muted">Gravitational waves, nuclear astrophysics, and careful statistics.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-satellite-dish fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Modeling &amp; inference</h4>
-                        <p class="text-muted">Classical ML, statistical modeling, and Bayesian workflows—clear assumptions, diagnostics, and uncertainty where it matters.</p>
+                        <h4 class="my-3">Gravitational waves</h4>
+                        <p class="text-muted">Ripples in the fabric of spacetime—probed with matched filtering, parameter estimation, and Bayesian inference on detector data.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-atom fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Pipelines &amp; LLM apps</h4>
-                        <p class="text-muted">End-to-end Python pipelines, retrieval-augmented generation, and evaluation hooks so models stay grounded and testable.</p>
+                        <h4 class="my-3">Nuclear astrophysics</h4>
+                        <p class="text-muted">Dense matter in neutron-star cores—connecting microphysics to macroscopic observables and multi-messenger constraints.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-heart-pulse fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-chart-column fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Domain-aware ML</h4>
-                        <p class="text-muted">Interest in healthcare and scientific data: documentation, limitations, and responsible use—not just leaderboard scores.</p>
+                        <h4 class="my-3">Statistical analysis</h4>
+                        <p class="text-muted">Rigorous treatment of astronomical events—cross-validation, systematic checks, and honest uncertainty where discovery claims depend on the data.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Projects-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Publications & Highlights-->
+        <section class="page-section bg-light" id="publications">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Projects</h2>
-                    <h3 class="section-subheading text-muted">Selected work—click a card for details and links.</h3>
+                    <h2 class="section-heading text-uppercase">Publications &amp; Highlights</h2>
+                    <h3 class="section-subheading text-muted">Papers, software, and discovery science—click a card for details.</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -100,11 +115,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="Healthcare LLM pipeline project" />
+                                <img class="img-fluid" src="assets/img/portfolio/gw230529.png" alt="GW230529 NS–BH merger artistic visualization" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Healthcare evidence RAG</div>
-                                <div class="portfolio-caption-subheading text-muted">Python · retrieval · Streamlit</div>
+                                <div class="portfolio-caption-heading">GW230529</div>
+                                <div class="portfolio-caption-subheading text-muted">LIGO–Virgo–KAGRA · lead analyst</div>
                             </div>
                         </div>
                     </div>
@@ -114,11 +129,11 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="Research and astrophysics modeling" />
+                                <img class="img-fluid" src="assets/img/portfolio/eos-semiparametric.png" alt="Pressure versus density: semiparametric equation-of-state models compared" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Physics-informed modeling</div>
-                                <div class="portfolio-caption-subheading text-muted">Inference · simulation data</div>
+                                <div class="portfolio-caption-heading">Neutron star EOS inference</div>
+                                <div class="portfolio-caption-subheading text-muted">Semiparametric models · CQG</div>
                             </div>
                         </div>
                     </div>
@@ -128,33 +143,33 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="More on GitHub" />
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="Likelihood weighting protocol LWP" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">More on GitHub</div>
-                                <div class="portfolio-caption-subheading text-muted">Repos &amp; experiments</div>
+                                <div class="portfolio-caption-heading">LWP</div>
+                                <div class="portfolio-caption-subheading text-muted">Bayesian inference · LIGO GitLab</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="page-section" id="about">
+        <!-- Journey-->
+        <section class="page-section" id="journey">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Background you can verify—swap dates and institutions to match your CV.</h3>
+                    <h2 class="section-heading text-uppercase">Journey</h2>
+                    <h3 class="section-subheading text-muted">Training and research path—add dates on your CV as needed.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="Graduate training" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="California State University Fullerton" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Graduate school</h4>
-                                <h4 class="subheading">Physics &amp; astrophysics</h4>
+                                <h4>California State University, Fullerton</h4>
+                                <h4 class="subheading">Master of Science, Physics</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Deep training in quantitative methods, large simulations and datasets, and careful inference under uncertainty—skills that carry directly into experimental ML and scientific computing.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Graduate coursework and research training in physics and astrophysics—quantitative methods, computation, and preparing for collaborative discovery science.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -162,19 +177,9 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Research</h4>
-                                <h4 class="subheading">Equation of state &amp; Bayesian workflows</h4>
+                                <h4 class="subheading">Gravitational-wave astronomy &amp; neutron-star science</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Experience building models where assumptions must be explicit, validated, and reproducible—habits I bring to every data science project.</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="Data science" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>Today</h4>
-                                <h4 class="subheading">Data science &amp; ML engineering</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Focused on end-to-end pipelines, NLP and LLM applications with evaluation, and clear communication of tradeoffs—especially in regulated or high-stakes domains.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Work with LIGO–Virgo–KAGRA and related inference pipelines: compact-binary mergers, equation-of-state constraints, and statistical tools for observational campaigns. <em>(Add your affiliations, advisors, and years here.)</em></p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -196,21 +201,14 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Connect</h2>
-                    <h3 class="section-subheading text-muted">Reach out on LinkedIn or GitHub.</h3>
+                    <h3 class="section-subheading text-muted">GitHub, LinkedIn, or email below.</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 mx-auto text-center">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/profile.png" alt="Sunny Ng" />
-                            <h4>Sunny Ng</h4>
-                            <p class="text-muted">Data scientist · ML &amp; NLP</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://github.com/sunnyshn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 mx-auto text-center">
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/sunnyshn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:sunnyng.sshn@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Add a one-paragraph bio here: what you’re looking for next, location, and how you like to collaborate.</p></div>
                 </div>
             </div>
         </section>
@@ -312,14 +310,12 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Healthcare evidence RAG</h2>
-                                    <p class="item-intro text-muted">Portfolio demo: retrieval + grounded answers for clinical-style questions.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="Healthcare RAG project screenshot placeholder" />
-                                    <p>End-to-end Python pipeline: ingest a small evidence corpus, build a TF-IDF retriever, optional LLM generation with citations, Streamlit UI, and a simple eval harness. Framed as decision support, not medical advice—shows how you think about safety and traceability.</p>
-                                    <ul class="list-inline">
-                                        <li><strong>Stack:</strong> Python · scikit-learn · Streamlit · OpenAI API (optional)</li>
-                                    </ul>
-                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://github.com/sunnyshn/healthcare-llm-pipeline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> View repo</a>
+                                    <h2 class="text-uppercase">GW230529</h2>
+                                    <p class="item-intro text-muted"><em>The Astrophysical Journal Letters</em> · LIGO–Virgo–KAGRA Collaboration</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gw230529.png" alt="GW230529 discovery placard: neutron star and black hole merger" />
+                                    <p class="fw-semibold">GW230529: Observation of Gravitational Waves from the Coalescence of a 2.5–4.5&nbsp;M<sub>⊙</sub> Compact Object and a Neutron Star</p>
+                                    <p>I served as a <strong>lead analyst</strong> on this discovery event—helping drive the analysis, characterization, and interpretation of the signal within the collaboration pipeline.</p>
+                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://iopscience.iop.org/article/10.3847/2041-8213/ad5beb" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt me-1"></i> Read the paper</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -340,14 +336,12 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">Physics-informed modeling</h2>
-                                    <p class="item-intro text-muted">Dense matter / EoS workflows—summarize what you actually shipped.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="Research modeling" />
-                                    <p><strong>Edit this block</strong> with your real publications, code, or analyses: e.g. posterior samples, Gaussian processes on equation-of-state data, interpolation and numerical stability, collaboration with observers. Link to papers or Zenodo as appropriate.</p>
-                                    <ul class="list-inline">
-                                        <li><strong>Highlights:</strong> Bayesian inference · scientific computing · reproducible notebooks</li>
-                                    </ul>
-                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://github.com/sunnyshn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> GitHub profile</a>
+                                    <h2 class="text-uppercase">Neutron star EOS</h2>
+                                    <p class="item-intro text-muted"><em>Classical and Quantum Gravity</em></p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/eos-semiparametric.png" alt="Low-density comparison of informed semiparametric EoS models (P versus ρ)" />
+                                    <p class="fw-semibold">Inferring the neutron star equation of state with nuclear-physics informed semiparametric models</p>
+                                    <p>Semiparametric modeling connects nuclear-physics priors to astrophysical constraints—Bayesian inference on the dense-matter equation of state with flexibility where the microphysics is uncertain.</p>
+                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://iopscience.iop.org/article/10.1088/1361-6382/ae1094" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt me-1"></i> Read the paper</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
@@ -368,11 +362,12 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <h2 class="text-uppercase">More on GitHub</h2>
-                                    <p class="item-intro text-muted">Kaggle kernels, coursework, and smaller experiments live here.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="GitHub" />
-                                    <p>Use this card to point recruiters to the rest of your work: pin the best repos on your GitHub profile, add README badges, and list competitions or open-source contributions you’re proud of.</p>
-                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://github.com/sunnyshn?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-1"></i> All repositories</a>
+                                    <h2 class="text-uppercase">LWP</h2>
+                                    <p class="item-intro text-muted">Likelihood Weighing Protocol · LIGO GitLab</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="LWP software placeholder — replace with your placard image" />
+                                    <p class="fw-semibold">Bayesian inference of the neutron star equation of state with LWP</p>
+                                    <p>The <strong>Likelihood Weighing Protocol (LWP)</strong> supports principled combination of astrophysical likelihoods and priors in equation-of-state analyses—software used in collaboration inference workflows.</p>
+                                    <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://git.ligo.org/reed.essick/lwp" target="_blank" rel="noopener noreferrer"><i class="fab fa-gitlab me-1"></i> Open repository</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
