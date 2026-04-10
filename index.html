@@ -36,7 +36,8 @@
                 width: min(280px, 100%);
                 aspect-ratio: 1;
                 object-fit: cover;
-                object-position: center 28%;
+                /* Geometric center of source image in the circle (tweak % if your face sits off-center in the file) */
+                object-position: 50% 50%;
             }
             /* Highlight cards: even thumbnail height (plus icons removed) */
             #publications .portfolio-item .portfolio-link img {
@@ -60,9 +61,13 @@
                 object-position: center center;
                 margin: 0 auto;
             }
-            /* LIGO mark is weighted left (arcs); nudge for better optical center in circle */
+            /* For the LIGO wordmark, crop in on the text instead of squeezing full logo */
             #journey .timeline-image.timeline-image-centered img.journey-logo-ligo {
-                object-position: 53% center;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 72% center;
+                padding: 0;
             }
             /* Contact: gold buttons, white label text */
             .btn-contact-gold {
@@ -127,7 +132,7 @@
                         <img class="img-fluid rounded-circle mx-auto d-block profile-photo" src="assets/img/team/profile.png" alt="Professional headshot of Sunny Ng, smiling, wearing glasses and a grey shirt over a light t-shirt" />
                     </div>
                     <div class="col-md-8">
-                        <h2 class="section-heading mb-3">Hello! I’m Sunny.</h2>
+                        <h2 class="section-heading mb-3">Hi! I’m Sunny.</h2>
                         <p class="lead text-muted">Astrophysicist turned data scientist. I’ve worked on gravitational-wave discovery and inference, dense-matter astrophysics, and statistical analysis of large observational campaigns, now bringing that same rigor to ML systems, evaluation, and responsible modeling.</p>
                         <p class="text-muted mb-0">Edit this paragraph anytime to match your current focus, location, and what roles you’re targeting.</p>
                     </div>
@@ -186,8 +191,11 @@
                                 <img class="img-fluid" src="assets/img/portfolio/gw230529.png" alt="GW230529 NS-BH merger artistic visualization" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Discovery event: GW230529</div>
+                                <div class="portfolio-caption-heading">Discovery Event: GW230529</div>
                                 <div class="portfolio-caption-subheading text-muted">LIGO–Virgo–KAGRA · Lead analyst</div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a class="btn btn-sm btn-outline-dark text-uppercase" href="https://lnkd.in/gZDnSpf9" target="_blank" rel="noopener noreferrer">Feature article <i class="fas fa-external-link-alt ms-1" aria-hidden="true"></i><span class="visually-hidden"> (opens in new tab)</span></a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +243,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>University of California, Irvine</h4>
-                                <h4 class="subheading">Bachelor of Science, Physics · Class of 2021</h4>
+                                <h4 class="subheading">Bachelor of Science, Physics</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Undergraduate foundation in physics: mathematical methods, laboratory work, and the path into graduate research.</p></div>
                         </div>
@@ -245,7 +253,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>California State University, Fullerton</h4>
-                                <h4 class="subheading">Master of Science, Physics · Class of 2024</h4>
+                                <h4 class="subheading">Master of Science, Physics </h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Graduate coursework and research training in physics and astrophysics: quantitative methods, computation, and preparing for collaborative discovery science.</p></div>
                         </div>
@@ -255,9 +263,9 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Research Scientist</h4>
-                                <h4 class="subheading">Gravitational-wave astronomy &amp; neutron-star science</h4>
+                                <h4 class="subheading">LIGO Scientific Collaboration</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Work with LIGO–Virgo–KAGRA and related inference pipelines: compact-binary mergers, equation-of-state constraints, and statistical tools for observational campaigns. <em>(Add your affiliations, advisors, and years here.)</em></p></div>
+                            <div class="timeline-body"><p class="text-muted">Work with LIGO–Virgo–KAGRA and related inference pipelines: compact-binary mergers, equation-of-state constraints, and statistical tools for observational campaigns. <em></em></p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -278,7 +286,7 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Connect</h2>
+                    <h2 class="section-heading">How To Reach Me</h2>
                     <h3 class="section-subheading text-muted">GitHub, LinkedIn, or email below.</h3>
                 </div>
                 <div class="row justify-content-center">
@@ -306,7 +314,7 @@
             <div class="container">
                 <p class="text-center text-muted mb-0">
                     <strong>Stack I use often:</strong>
-                    Python · NumPy / pandas · scikit-learn · PyTorch (as needed) · Git · Linux/WSL · Streamlit · REST APIs
+                    Python · NumPy / pandas · scikit-learn · PyTorch · Tensorflow · Git · Linux/WSL 
                 </p>
             </div>
         </div>
@@ -314,7 +322,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Let's get in touch!</h2>
+                    <h2 class="section-heading text-uppercase">Let's connect!</h2>
                     <a class="btn btn-contact-gold btn-xl text-uppercase me-2 mb-2" href="mailto:sunnyng.sshn@gmail.com">Email me</a>
                     <a class="btn btn-contact-gold btn-xl text-uppercase mb-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
@@ -324,13 +332,10 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Sunny Ng 2026</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
+                    <div class="col-lg-6 text-lg-start">Copyright &copy; Sunny Ng 2026</div>
+                    <div class="col-lg-6 my-3 my-lg-0 text-lg-end">
                         <a class="btn btn-dark btn-social mx-2" href="https://github.com/sunnyshn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none" href="mailto:sunnyng.sshn@gmail.com">Email</a>
                     </div>
                 </div>
             </div>
