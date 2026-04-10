@@ -36,8 +36,8 @@
                 width: min(280px, 100%);
                 aspect-ratio: 1;
                 object-fit: cover;
-                /* Nudge crop: slightly right on source → face left in circle; higher Y → face lower toward middle */
-                object-position: left bottom;
+                /* Baseline: centered, slight vertical bias for landscape headshots. Tweak first % = left/right, second % = up/down. */
+                object-position: 48% 52%;
             }
             /* Highlight cards: even thumbnail height (plus icons removed) */
             #publications .portfolio-item .portfolio-link img {
