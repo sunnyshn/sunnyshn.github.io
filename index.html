@@ -36,7 +36,8 @@
                 width: min(280px, 100%);
                 aspect-ratio: 1;
                 object-fit: cover;
-                object-position: center 28%;
+                /* Slightly left on source image so face sits just right of center in the circle */
+                object-position: 44% 28%;
             }
             /* Highlight cards: even thumbnail height (plus icons removed) */
             #publications .portfolio-item .portfolio-link img {
@@ -127,7 +128,7 @@
                         <img class="img-fluid rounded-circle mx-auto d-block profile-photo" src="assets/img/team/profile.png" alt="Professional headshot of Sunny Ng, smiling, wearing glasses and a grey shirt over a light t-shirt" />
                     </div>
                     <div class="col-md-8">
-                        <h2 class="section-heading mb-3">Hello there! I’m Sunny.</h2>
+                        <h2 class="section-heading mb-3">Hello! I’m Sunny.</h2>
                         <p class="lead text-muted">Astrophysicist turned data scientist. I’ve worked on gravitational-wave discovery and inference, dense-matter astrophysics, and statistical analysis of large observational campaigns, now bringing that same rigor to ML systems, evaluation, and responsible modeling.</p>
                         <p class="text-muted mb-0">Edit this paragraph anytime to match your current focus, location, and what roles you’re targeting.</p>
                     </div>
@@ -191,7 +192,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <img class="img-fluid" src="assets/img/portfolio/eos-semiparametric.png" alt="Pressure versus density: semiparametric equation-of-state models compared" />
+                                <img class="img-fluid" src="assets/img/portfolio/eos-semiparametric.png" alt="Low-density EoS comparison: MM+chi+GP, GP (Legred et al.), and MM+chi+PPF with shaded bands" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Neutron star EOS inference</div>
@@ -202,7 +203,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="Likelihood weighting protocol LWP" />
+                                <img class="img-fluid" src="assets/img/portfolio/lwp-placard.png" alt="LWP: hexagonal density plot with blue contour overlay" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">LWP</div>
@@ -364,7 +365,7 @@
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Neutron star EOS</h2>
                                     <p class="item-intro text-muted"><em>Classical and Quantum Gravity</em></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/eos-semiparametric.png" alt="Low-density comparison of informed semiparametric EoS models (P versus ρ)" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/eos-semiparametric.png" alt="Low-density EoS comparison: MM+chi+GP, GP (Legred et al.), and MM+chi+PPF with shaded bands" />
                                     <p class="fw-semibold">Inferring the neutron star equation of state with nuclear-physics informed semiparametric models</p>
                                     <p>Semiparametric modeling connects nuclear-physics priors to astrophysical constraints: Bayesian inference on the dense-matter equation of state with flexibility where the microphysics is uncertain.</p>
                                     <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://iopscience.iop.org/article/10.1088/1361-6382/ae1094" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt me-1"></i> Read the paper</a>
@@ -390,7 +391,7 @@
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">LWP</h2>
                                     <p class="item-intro text-muted">Likelihood Weighing Protocol · LIGO GitLab</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="LWP software placeholder; replace with your placard image" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/lwp-placard.png" alt="LWP: hexagonal density plot with blue contour overlay" />
                                     <p class="fw-semibold">Bayesian inference of the neutron star equation of state with LWP</p>
                                     <p>The <strong>Likelihood Weighing Protocol (LWP)</strong> supports principled combination of astrophysical likelihoods and priors in equation-of-state analyses: software used in collaboration inference workflows.</p>
                                     <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://git.ligo.org/reed.essick/lwp" target="_blank" rel="noopener noreferrer"><i class="fab fa-gitlab me-1"></i> Open repository</a>
