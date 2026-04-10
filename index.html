@@ -31,6 +31,13 @@
                 margin-top: 0;
                 margin-bottom: 0;
             }
+            /* Intro: landscape headshot crops cleanly inside circle */
+            #intro .profile-photo {
+                width: min(280px, 100%);
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: center 28%;
+            }
             /* Highlight cards: even thumbnail height (plus icons removed) */
             #publications .portfolio-item .portfolio-link img {
                 width: 100%;
@@ -52,6 +59,10 @@
                 object-fit: contain;
                 object-position: center center;
                 margin: 0 auto;
+            }
+            /* LIGO mark is weighted left (arcs); nudge for better optical center in circle */
+            #journey .timeline-image.timeline-image-centered img.journey-logo-ligo {
+                object-position: 53% center;
             }
             /* Contact: gold buttons, white label text */
             .btn-contact-gold {
@@ -113,7 +124,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-                        <img class="img-fluid rounded-circle mx-auto d-block" style="max-width: 280px" src="assets/img/team/profile.png" alt="Sunny Ng" />
+                        <img class="img-fluid rounded-circle mx-auto d-block profile-photo" src="assets/img/team/profile.png" alt="Professional headshot of Sunny Ng, smiling, wearing glasses and a grey shirt over a light t-shirt" />
                     </div>
                     <div class="col-md-8">
                         <h2 class="section-heading mb-3">Hello there! I’m Sunny.</h2>
@@ -163,7 +174,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Publications &amp; Highlights</h2>
-                    <h3 class="section-subheading text-muted">Papers, software, and discovery science. Click a card for details.</h3>
+                    <h3 class="section-subheading text-muted">Papers, software, and discovery science.</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -206,7 +217,7 @@
         <section class="page-section" id="journey">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading">Journey so far...</h2>
+                    <h2 class="section-heading">The journey so far...</h2>
                     <h3 class="section-subheading text-muted">Here's where I've been!</h3>
                 </div>
                 <ul class="timeline">
@@ -231,7 +242,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image timeline-image-centered"><img class="rounded-circle img-fluid" src="assets/img/about/ligo-logo.png" alt="LIGO, Laser Interferometer Gravitational-Wave Observatory logo" /></div>
+                        <div class="timeline-image timeline-image-centered"><img class="rounded-circle img-fluid journey-logo-ligo" src="assets/img/about/ligo-logo.png" alt="LIGO, Laser Interferometer Gravitational-Wave Observatory logo" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Research Scientist</h4>
