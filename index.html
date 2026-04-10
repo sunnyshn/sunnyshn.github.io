@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Sunny Ng — astrophysicist turned data scientist. ML pipelines, NLP/RAG, and responsible use of models on real-world data." />
+        <meta name="description" content="Sunny Ng: astrophysicist turned data scientist. ML pipelines, NLP/RAG, and responsible use of models on real-world data." />
         <meta name="author" content="Sunny Ng" />
         <link rel="canonical" href="https://sunnyshn.github.io/" />
         <!-- Open Graph / social previews -->
@@ -29,7 +29,7 @@
             }
             header.masthead .masthead-subheading {
                 margin-top: 0;
-                margin-bottom: 1.75rem;
+                margin-bottom: 0;
             }
             /* Highlight cards: even thumbnail height (plus icons removed) */
             #publications .portfolio-item .portfolio-link img {
@@ -42,6 +42,28 @@
                 object-fit: contain;
                 background: #fff;
                 padding: 0.35rem;
+            }
+            #journey .timeline-image.timeline-image-centered {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #journey .timeline-image.timeline-image-centered img {
+                object-fit: contain;
+                object-position: center center;
+                margin: 0 auto;
+            }
+            /* Contact: gold buttons, white label text */
+            .btn-contact-gold {
+                background-color: #fec503 !important;
+                border-color: #fec503 !important;
+                color: #fff !important;
+            }
+            .btn-contact-gold:hover,
+            .btn-contact-gold:focus {
+                background-color: #e0ae03 !important;
+                border-color: #e0ae03 !important;
+                color: #fff !important;
             }
         </style>
         <script type="application/ld+json">
@@ -84,15 +106,6 @@
             <div class="container">
                 <div class="masthead-heading text-uppercase">Sunny Ng</div>
                 <div class="masthead-subheading">Astrophysics · Data science · Machine learning</div>
-                <div class="d-flex flex-wrap gap-3 justify-content-center">
-                    <a class="btn btn-primary btn-xl text-uppercase" href="#publications">Publications &amp; Highlights</a>
-                    <a
-                        class="btn btn-outline-light btn-xl text-uppercase"
-                        href="https://ui.adsabs.harvard.edu/search/q=author:%22Ng%2C+Sunny%22&amp;sort=date%20desc,%20bibcode%20desc"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Publications (ADS)</a>
-                </div>
             </div>
         </header>
         <!-- Intro / profile-->
@@ -104,7 +117,7 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="section-heading mb-3">Hello there! I’m Sunny.</h2>
-                        <p class="lead text-muted">Astrophysicist turned data scientist. I’ve worked on gravitational-wave discovery and inference, dense-matter astrophysics, and statistical analysis of large observational campaigns—now bringing that same rigor to ML systems, evaluation, and responsible modeling.</p>
+                        <p class="lead text-muted">Astrophysicist turned data scientist. I’ve worked on gravitational-wave discovery and inference, dense-matter astrophysics, and statistical analysis of large observational campaigns, now bringing that same rigor to ML systems, evaluation, and responsible modeling.</p>
                         <p class="text-muted mb-0">Edit this paragraph anytime to match your current focus, location, and what roles you’re targeting.</p>
                     </div>
                 </div>
@@ -124,7 +137,7 @@
                             <i class="fas fa-satellite-dish fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Gravitational waves</h4>
-                        <p class="text-muted">Ripples in the fabric of spacetime—probed with matched filtering, parameter estimation, and Bayesian inference on detector data.</p>
+                        <p class="text-muted">Ripples in the fabric of spacetime, probed with matched filtering, parameter estimation, and Bayesian inference on detector data.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -132,7 +145,7 @@
                             <i class="fas fa-atom fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Nuclear astrophysics</h4>
-                        <p class="text-muted">Dense matter in neutron-star cores—connecting microphysics to macroscopic observables and multi-messenger constraints.</p>
+                        <p class="text-muted">Dense matter in neutron-star cores, connecting microphysics to macroscopic observables and multi-messenger constraints.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -140,7 +153,7 @@
                             <i class="fas fa-chart-column fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Statistical analysis</h4>
-                        <p class="text-muted">Rigorous treatment of astronomical events—cross-validation, systematic checks, and honest uncertainty where discovery claims depend on the data.</p>
+                        <p class="text-muted">Rigorous treatment of astronomical events: cross-validation, systematic checks, and honest uncertainty where discovery claims depend on the data.</p>
                     </div>
                 </div>
             </div>
@@ -150,13 +163,13 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Publications &amp; Highlights</h2>
-                    <h3 class="section-subheading text-muted">Papers, software, and discovery science—click a card for details.</h3>
+                    <h3 class="section-subheading text-muted">Papers, software, and discovery science. Click a card for details.</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <img class="img-fluid" src="assets/img/portfolio/gw230529.png" alt="GW230529 NS–BH merger artistic visualization" />
+                                <img class="img-fluid" src="assets/img/portfolio/gw230529.png" alt="GW230529 NS-BH merger artistic visualization" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">GW230529</div>
@@ -193,8 +206,8 @@
         <section class="page-section" id="journey">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Journey</h2>
-                    <h3 class="section-subheading text-muted">Training and research path—add dates on your CV as needed.</h3>
+                    <h2 class="section-heading">Journey so far...</h2>
+                    <h3 class="section-subheading text-muted">Here's where I've been!</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -202,9 +215,9 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>University of California, Irvine</h4>
-                                <h4 class="subheading">Bachelor of Science, Physics</h4>
+                                <h4 class="subheading">Bachelor of Science, Physics · Class of 2021</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Undergraduate foundation in physics—mathematical methods, laboratory work, and the path into graduate research. <em>(Add graduation year or honors here.)</em></p></div>
+                            <div class="timeline-body"><p class="text-muted">Undergraduate foundation in physics: mathematical methods, laboratory work, and the path into graduate research.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -212,16 +225,16 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>California State University, Fullerton</h4>
-                                <h4 class="subheading">Master of Science, Physics</h4>
+                                <h4 class="subheading">Master of Science, Physics · Class of 2024</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Graduate coursework and research training in physics and astrophysics—quantitative methods, computation, and preparing for collaborative discovery science.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Graduate coursework and research training in physics and astrophysics: quantitative methods, computation, and preparing for collaborative discovery science.</p></div>
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/ligo-logo.png" alt="LIGO — Laser Interferometer Gravitational-Wave Observatory logo" /></div>
+                        <div class="timeline-image timeline-image-centered"><img class="rounded-circle img-fluid" src="assets/img/about/ligo-logo.png" alt="LIGO, Laser Interferometer Gravitational-Wave Observatory logo" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Research</h4>
+                                <h4>Research Scientist</h4>
                                 <h4 class="subheading">Gravitational-wave astronomy &amp; neutron-star science</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Work with LIGO–Virgo–KAGRA and related inference pipelines: compact-binary mergers, equation-of-state constraints, and statistical tools for observational campaigns. <em>(Add your affiliations, advisors, and years here.)</em></p></div>
@@ -249,10 +262,21 @@
                     <h3 class="section-subheading text-muted">GitHub, LinkedIn, or email below.</h3>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 mx-auto text-center">
+                    <div class="col-lg-8 mx-auto text-center">
                         <a class="btn btn-dark btn-social mx-2" href="https://github.com/sunnyshn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="mailto:sunnyng.sshn@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <a
+                            class="btn btn-outline-dark btn-lg text-uppercase"
+                            href="https://ui.adsabs.harvard.edu/search/q=author:%22Ng%2C+Sunny%22&amp;sort=date%20desc,%20bibcode%20desc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Publications on NASA ADS</a
+                        >
                     </div>
                 </div>
             </div>
@@ -270,11 +294,9 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact</h2>
-                    <h3 class="section-subheading text-muted">Best way to reach me is email or LinkedIn.</h3>
-                    <p class="text-muted mb-4">I removed the embedded form to keep the site lightweight. Use the links below or the icons in Connect.</p>
-                    <a class="btn btn-primary btn-xl text-uppercase me-2 mb-2" href="mailto:sunnyng.sshn@gmail.com">Email me</a>
-                    <a class="btn btn-outline-dark btn-xl text-uppercase mb-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <h2 class="section-heading text-uppercase">Let's get in touch!</h2>
+                    <a class="btn btn-contact-gold btn-xl text-uppercase me-2 mb-2" href="mailto:sunnyng.sshn@gmail.com">Email me</a>
+                    <a class="btn btn-contact-gold btn-xl text-uppercase mb-2" href="https://www.linkedin.com/in/sunnysn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -307,7 +329,7 @@
                                     <p class="item-intro text-muted"><em>The Astrophysical Journal Letters</em> · LIGO–Virgo–KAGRA Collaboration</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gw230529.png" alt="GW230529 discovery placard: neutron star and black hole merger" />
                                     <p class="fw-semibold">GW230529: Observation of Gravitational Waves from the Coalescence of a 2.5–4.5&nbsp;M<sub>⊙</sub> Compact Object and a Neutron Star</p>
-                                    <p>I served as a <strong>lead analyst</strong> on this discovery event—helping drive the analysis, characterization, and interpretation of the signal within the collaboration pipeline.</p>
+                                    <p>I served as a <strong>lead analyst</strong> on this discovery event, helping drive the analysis, characterization, and interpretation of the signal within the collaboration pipeline.</p>
                                     <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://iopscience.iop.org/article/10.3847/2041-8213/ad5beb" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt me-1"></i> Read the paper</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -333,7 +355,7 @@
                                     <p class="item-intro text-muted"><em>Classical and Quantum Gravity</em></p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/eos-semiparametric.png" alt="Low-density comparison of informed semiparametric EoS models (P versus ρ)" />
                                     <p class="fw-semibold">Inferring the neutron star equation of state with nuclear-physics informed semiparametric models</p>
-                                    <p>Semiparametric modeling connects nuclear-physics priors to astrophysical constraints—Bayesian inference on the dense-matter equation of state with flexibility where the microphysics is uncertain.</p>
+                                    <p>Semiparametric modeling connects nuclear-physics priors to astrophysical constraints: Bayesian inference on the dense-matter equation of state with flexibility where the microphysics is uncertain.</p>
                                     <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://iopscience.iop.org/article/10.1088/1361-6382/ae1094" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt me-1"></i> Read the paper</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -357,9 +379,9 @@
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">LWP</h2>
                                     <p class="item-intro text-muted">Likelihood Weighing Protocol · LIGO GitLab</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="LWP software placeholder — replace with your placard image" />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="LWP software placeholder; replace with your placard image" />
                                     <p class="fw-semibold">Bayesian inference of the neutron star equation of state with LWP</p>
-                                    <p>The <strong>Likelihood Weighing Protocol (LWP)</strong> supports principled combination of astrophysical likelihoods and priors in equation-of-state analyses—software used in collaboration inference workflows.</p>
+                                    <p>The <strong>Likelihood Weighing Protocol (LWP)</strong> supports principled combination of astrophysical likelihoods and priors in equation-of-state analyses: software used in collaboration inference workflows.</p>
                                     <a class="btn btn-dark btn-xl text-uppercase me-2 mb-2" href="https://git.ligo.org/reed.essick/lwp" target="_blank" rel="noopener noreferrer"><i class="fab fa-gitlab me-1"></i> Open repository</a>
                                     <button class="btn btn-primary btn-xl text-uppercase mb-2" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
